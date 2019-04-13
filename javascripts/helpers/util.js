@@ -24,7 +24,15 @@ const cartBuilder = (array) => {
     domString += `<div>${item.price}</div>`
     domString += `</div>`
   })
-  printToDom('bread-container', domString);
+  printToDom('cart-container', domString);
+  printToDom('order-summary', domString);
+};
+
+const displayTotal = () => {
+  const total = `<div>Total</div><div>${(cart.reduce((a, b) => {return a + b.price}, 0) + 500)}</div>`;
+
+  document.getElementById('order-total').innerHTML = total;
+  $('#exampleModal').modal('toggle')
 }
 
 const printToDom = (divId, textToPrint) => {
@@ -32,4 +40,4 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-export default {addToCart, removeFromCart};
+export default {addToCart, removeFromCart, displayTotal};

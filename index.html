@@ -8,10 +8,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="p-0">
   <div class="container">
     <div class="row">
-      <div class="col-9">
+      <div class="col-9 border border-primary">
         <div id="bread" class="row flex-column mx-0">
           <h1>Bread</h1>
           <div>
@@ -66,19 +66,63 @@
             <input type="checkbox" id="cucumbers" class="btn btn-dark">Cucumbers</input>
           </div>
         </div>
+
+        <div class="mt-3">
+          <button type="button" id="checkout-button" class="btn btn-dark">Checkout</button>
+        </div>
   
-        <button class="btn btn-dark">Checkout</button>
       </div>
     
-      <div class="col-3">
+      <div class="col-3 border border-primary">
         <h1>Sandwhich</h1>
-        <div id="bread-container">
-    
+        <div id="cart-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Order Summary</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="order-summary" class="font-italics"></div>
+          <div id="tip" class="d-flex justify-content-between font-weight-bold">
+            <div>Tip</div>
+            <div>500</div>
+          </div>
+          <div id="order-total" class="d-flex justify-content-between font-weight-bold"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target="#thankyou">Checkout</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
   </div>
-  
+
+  <div class="modal fade" id="thankyou" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank you for your purchase.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Come back and visit again soon!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Go back to Store</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
