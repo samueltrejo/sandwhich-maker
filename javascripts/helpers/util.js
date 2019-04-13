@@ -5,6 +5,17 @@ const addToCart = (ingredient) => {
   cartBuilder(cart);
 };
 
+const removeFromCart = (ingredientType) => {
+  let tempArray = [];
+  cart.forEach((item) => {
+    if(ingredientType !== item.type) {
+      tempArray.push(item);
+    }
+  })
+  cart = tempArray;
+  cartBuilder(cart);
+}
+
 const cartBuilder = (array) => {
   let domString = '';
   array.forEach((item) => {
@@ -21,4 +32,4 @@ const printToDom = (divId, textToPrint) => {
   selectedDiv.innerHTML = textToPrint;
 };
 
-export default {addToCart};
+export default {addToCart, removeFromCart};
