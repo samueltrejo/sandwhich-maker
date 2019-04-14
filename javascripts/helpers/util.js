@@ -19,9 +19,11 @@ const removeFromCart = (ingredientType) => {
 const cartBuilder = (array) => {
   let domString = '';
   array.forEach((item) => {
-    domString += `<div class="d-flex justify-content-between">`
+    domString += `<div class="row mx-0">`
+    domString += `<div class="col d-flex justify-content-between">`
     domString += `<div>${item.type}</div>`
     domString += `<div>${item.price}</div>`
+    domString += `</div>`
     domString += `</div>`
   })
   printToDom('cart-container', domString);
