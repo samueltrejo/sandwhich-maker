@@ -9,11 +9,28 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body class="p-0">
+  <nav class="bg-dark">
+    <div class="d-flex justify-content-between">
+      <div class="btn btn-dark rounded-0 py-0 px-5 mx-5">Samuel's Online Sandwhich Shop</div>
+      <div class="btn btn-success rounded-0 py-0 px-5 mx-5">Checkout</div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="d-flex justify-content-between py-3">
+      <button class="btn btn-success rounded-0">1: Bread</button>
+      <button class="btn btn-success rounded-0">2: Meat</button>
+      <button class="btn btn-success rounded-0">3: Cheese</button>
+      <button class="btn btn-success rounded-0">4: Condiment</button>
+      <button class="btn btn-success rounded-0">5: Veggies</button>
+      <button class="btn btn-success rounded-0">6: Checkout</button>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
-      <div class="col-9 border border-primary">
-        <div id="bread" class="row flex-column mx-0">
-          <h1>Bread</h1>
+      <div class="col-9 border p-0">
+        <div id="bread" class="row flex-column mx-0 bg-white">
+          <h3 class="bg-dark text-white px-3 py-2">Choose your Bread</h3>
           <div>
             <input type="checkbox" id="white" class="btn btn-dark">White</input>
             <input type="checkbox" id="wheat" class="btn btn-dark">Wheat</input>
@@ -23,8 +40,8 @@
           </div>
         </div>
   
-        <div id="meat" class="row flex-column mx-0">
-          <h1>Meat</h1>
+        <div id="meat" class="row flex-column mx-0 bg-white">
+          <h3 class="bg-dark text-white px-3 py-2">Meat</h3>
           <div>
             <input type="checkbox" id="chicken" class="btn btn-dark">Chicken</input>
             <input type="checkbox" id="roastbeef" class="btn btn-dark">Roast Beef</input>
@@ -34,8 +51,8 @@
           </div>
         </div>
   
-        <div id="cheese" class="row flex-column mx-0">
-          <h1>Cheese</h1>
+        <div id="cheese" class="row flex-column mx-0 bg-white">
+          <h3 class="bg-dark text-white px-3 py-2">Cheese</h3>
           <div>
             <input type="checkbox" id="american" class="btn btn-dark">American</input>
             <input type="checkbox" id="swiss" class="btn btn-dark">Swiss</input>
@@ -45,8 +62,8 @@
           </div>
         </div>
   
-        <div id="condiment" class="row flex-column mx-0">
-          <h1>Condiments</h1>
+        <div id="condiment" class="row flex-column mx-0 bg-white">
+          <h3 class="bg-dark text-white px-3 py-2">Condiments</h3>
           <div>
             <input type="checkbox" id="mayonaise" class="btn btn-dark">Mayonaise</input>
             <input type="checkbox" id="ketchup" class="btn btn-dark">Ketchup</input>
@@ -56,8 +73,8 @@
           </div>
         </div>
   
-        <div id="veggie" class="row flex-column mx-0">
-          <h1>Veggies</h1>
+        <div id="veggie" class="row flex-column mx-0 bg-white">
+          <h3 class="bg-dark text-white px-3 py-2">Veggies</h3>
           <div>
             <input type="checkbox" id="lettuce" class="btn btn-dark">Lettuce</input>
             <input type="checkbox" id="spinach" class="btn btn-dark">Spinach</input>
@@ -74,7 +91,7 @@
       </div>
     
       <div class="col-3 border border-primary">
-        <h1>Sandwhich</h1>
+        <h3>Sandwhich</h3>
         <div id="cart-container"></div>
       </div>
     </div>
