@@ -12,7 +12,9 @@ const cheeseSection = document.getElementById('cheese');
 const condimentSection = document.getElementById('condiment');
 const veggieSection = document.getElementById('veggie');
 const checkoutButton = document.getElementById('checkout-button');
-const sectionButtons = document.getElementById('section-buttons')
+const navCheckoutButton = document.getElementById('nav-checkout');
+const sectionButtons = document.getElementById('section-buttons');
+const nextSectionButton = document.getElementById('next-button');
 
 const attachEvents = () => {
   breadSection.addEventListener('click', bread.addBread);
@@ -21,7 +23,9 @@ const attachEvents = () => {
   condimentSection.addEventListener('click', condiment.addCondiment);
   veggieSection.addEventListener('click', veggie.addVeggie);
   checkoutButton.addEventListener('click', checkout.displayTotal);
+  navCheckoutButton.addEventListener('click', checkout.displayTotal);
   sectionButtons.addEventListener('click', advance.changeSection);
+  nextSectionButton.addEventListener('click', advance.incrementSection);
 };
 
 export default {attachEvents, breadSection, meatSection, cheeseSection, condimentSection, veggieSection};
