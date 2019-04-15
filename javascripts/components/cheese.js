@@ -10,7 +10,7 @@ const cheese = {
 
 const addCheese = (event) => {
   const checked = event.target.checked;
-  const cheeseType = event.target.id;
+  const cheeseType = event.target.value;
   
   if(checked) {
     let ingredient = {};

@@ -10,7 +10,7 @@ const bread = {
 
 const addBread = (event) => {
   const checked = event.target.checked;
-  const breadType = event.target.id;
+  const breadType = event.target.value;
   
   if(checked) {
     let ingredient = {};

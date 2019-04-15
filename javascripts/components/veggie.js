@@ -10,7 +10,7 @@ const veggie = {
 
 const addVeggie = (event) => {
   const checked = event.target.checked;
-  const veggieType = event.target.id;
+  const veggieType = event.target.value;
   
   if(checked) {
     let ingredient = {};

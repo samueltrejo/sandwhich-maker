@@ -9,73 +9,433 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body class="p-0">
+  <nav class="bg-dark">
+    <div class="d-flex justify-content-between">
+      <div class="btn btn-dark rounded-0 py-0 px-5 mx-5">Samuel's Online Sandwhich Shop</div>
+      <div class="btn btn-success rounded-0 py-0 px-5 mx-5">Checkout</div>
+    </div>
+  </nav>
   <div class="container">
-    <div class="row">
-      <div class="col-9 border border-primary">
-        <div id="bread" class="row flex-column mx-0">
-          <h1>Bread</h1>
-          <div>
-            <input type="checkbox" id="white" class="btn btn-dark">White</input>
-            <input type="checkbox" id="wheat" class="btn btn-dark">Wheat</input>
-            <input type="checkbox" id="grain" class="btn btn-dark">Grain</input>
-            <input type="checkbox" id="italian" class="btn btn-dark">Italian</input>
-            <input type="checkbox" id="flatbread" class="btn btn-dark">Flatbread</input>
-          </div>
-        </div>
-  
-        <div id="meat" class="row flex-column mx-0">
-          <h1>Meat</h1>
-          <div>
-            <input type="checkbox" id="chicken" class="btn btn-dark">Chicken</input>
-            <input type="checkbox" id="roastbeef" class="btn btn-dark">Roast Beef</input>
-            <input type="checkbox" id="bacon" class="btn btn-dark">Bacon</input>
-            <input type="checkbox" id="tuna" class="btn btn-dark">Tuna</input>
-            <input type="checkbox" id="tofu" class="btn btn-dark">Tofu</input>
-          </div>
-        </div>
-  
-        <div id="cheese" class="row flex-column mx-0">
-          <h1>Cheese</h1>
-          <div>
-            <input type="checkbox" id="american" class="btn btn-dark">American</input>
-            <input type="checkbox" id="swiss" class="btn btn-dark">Swiss</input>
-            <input type="checkbox" id="cheddar" class="btn btn-dark">Cheddar</input>
-            <input type="checkbox" id="gorgonzola" class="btn btn-dark">Gorgonzola</input>
-            <input type="checkbox" id="parmesan" class="btn btn-dark">Parmesan</input>
-          </div>
-        </div>
-  
-        <div id="condiment" class="row flex-column mx-0">
-          <h1>Condiments</h1>
-          <div>
-            <input type="checkbox" id="mayonaise" class="btn btn-dark">Mayonaise</input>
-            <input type="checkbox" id="ketchup" class="btn btn-dark">Ketchup</input>
-            <input type="checkbox" id="mustard" class="btn btn-dark">Mustard</input>
-            <input type="checkbox" id="ranch" class="btn btn-dark">Ranch</input>
-            <input type="checkbox" id="hotsauce" class="btn btn-dark">Hot Sauce</input>
-          </div>
-        </div>
-  
-        <div id="veggie" class="row flex-column mx-0">
-          <h1>Veggies</h1>
-          <div>
-            <input type="checkbox" id="lettuce" class="btn btn-dark">Lettuce</input>
-            <input type="checkbox" id="spinach" class="btn btn-dark">Spinach</input>
-            <input type="checkbox" id="onions" class="btn btn-dark">Onions</input>
-            <input type="checkbox" id="tomatoes" class="btn btn-dark">Tomatoes</input>
-            <input type="checkbox" id="cucumbers" class="btn btn-dark">Cucumbers</input>
-          </div>
-        </div>
+    <div class="d-flex justify-content-between py-3">
+      <button class="btn btn-success rounded-0">1: Bread</button>
+      <span class="btn-padding text-success font-weight-bold">>>></span>
+      <button class="btn btn-success rounded-0">2: Meat</button>
+      <span class="btn-padding text-success font-weight-bold">>>></span>
+      <button class="btn btn-success rounded-0">3: Cheese</button>
+      <span class="btn-padding text-success font-weight-bold">>>></span>
+      <button class="btn btn-success rounded-0">4: Condiment</button>
+      <span class="btn-padding text-success font-weight-bold">>>></span>
+      <button class="btn btn-success rounded-0">5: Veggies</button>
+      <span class="btn-padding text-success font-weight-bold">>>></span>
+      <button class="btn btn-success rounded-0">6: Checkout</button>
+    </div>
+  </div>
 
-        <div class="mt-3">
-          <button type="button" id="checkout-button" class="btn btn-dark">Checkout</button>
+  <div class="container">
+    <div class="row mx-0">
+      <div class="col-9 border p-0">
+        <!-- bread -->
+        <div id="bread" class="row flex-column mx-0 bg-white">
+          <!-- bread heading -->
+          <h3 class="bg-dark text-white px-3 py-2">Choose your Bread</h3>
+          <div class="row mx-0">
+            <div class="col">ITEM</div>
+            <div class="col">DESCRIPTION</div>
+            <div class="col">PRICE</div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="border-bottom border-dark my-2"></div>
+            </div>
+          </div><!-- /bread heading -->
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">White Bread</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch1" value="white">
+                <label class="custom-control-label" for="customSwitch1">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Wheat Bread</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch2" value="wheat">
+                <label class="custom-control-label" for="customSwitch2">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Whole Grain Bread</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch3" value="grain">
+                <label class="custom-control-label" for="customSwitch3">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Italian Bread</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch4" value="italian">
+                <label class="custom-control-label" for="customSwitch4">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Flatbread</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch5" value="flatbread">
+                <label class="custom-control-label" for="customSwitch5">$0.70</label>
+              </div>
+            </div>
+          </div>
+        </div><!-- /bread -->
+
+        <!-- meat -->
+        <div id="meat" class="row flex-column mx-0 bg-white d-none">
+          <!-- meat heading -->
+          <h3 class="bg-dark text-white px-3 py-2">Choose your Meat</h3>
+          <div class="row mx-0">
+            <div class="col">ITEM</div>
+            <div class="col">DESCRIPTION</div>
+            <div class="col">PRICE</div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="border-bottom border-dark my-2"></div>
+            </div>
+          </div><!-- /meat heading -->
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Chicken</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch6" value="chicken">
+                <label class="custom-control-label" for="customSwitch6">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Roast Beef</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch7" value="roastbeef">
+                <label class="custom-control-label" for="customSwitch7">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Bacon</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch8" value="bacon">
+                <label class="custom-control-label" for="customSwitch8">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Tuna</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch9" value="tuna">
+                <label class="custom-control-label" for="customSwitch9">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Tofu</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch10" value="tofu">
+                <label class="custom-control-label" for="customSwitch10">$0.70</label>
+              </div>
+            </div>
+          </div>
+        </div><!-- /meat -->
+
+        <!-- cheese -->
+        <div id="cheese" class="row flex-column mx-0 bg-white d-none">
+          <!-- cheese heading -->
+          <h3 class="bg-dark text-white px-3 py-2">Choose your Cheese</h3>
+          <div class="row mx-0">
+            <div class="col">ITEM</div>
+            <div class="col">DESCRIPTION</div>
+            <div class="col">PRICE</div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="border-bottom border-dark my-2"></div>
+            </div>
+          </div><!-- /cheese heading -->
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">American</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch11" value="american">
+                <label class="custom-control-label" for="customSwitch11">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Swiss</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch12" value="swiss">
+                <label class="custom-control-label" for="customSwitch12">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Cheddar</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch13" value="cheddar">
+                <label class="custom-control-label" for="customSwitch13">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Gorgonzola</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch14" value="gorgonzola">
+                <label class="custom-control-label" for="customSwitch14">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Parmesan</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch15" value="parmesan">
+                <label class="custom-control-label" for="customSwitch15">$0.70</label>
+              </div>
+            </div>
+          </div>
+        </div><!-- /cheese -->
+
+        <!-- condiment -->
+        <div id="condiment" class="row flex-column mx-0 bg-white d-none">
+          <!-- condiment heading -->
+          <h3 class="bg-dark text-white px-3 py-2">Choose your Condiments</h3>
+          <div class="row mx-0">
+            <div class="col">ITEM</div>
+            <div class="col">DESCRIPTION</div>
+            <div class="col">PRICE</div>
+          </div>
+          <div class="row mx-0">
+            <div class="col">
+              <div class="border-bottom border-dark my-2"></div>
+            </div>
+          </div><!-- /condiment heading -->
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Mayonaise</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch16" value="mayonaise">
+                <label class="custom-control-label" for="customSwitch16">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Ketchup</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch17" value="ketchup">
+                <label class="custom-control-label" for="customSwitch17">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Mustard</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch18" value="mustard">
+                <label class="custom-control-label" for="customSwitch18">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Ranch</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch19" value="ranch">
+                <label class="custom-control-label" for="customSwitch19">$0.70</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-2">
+            <div class="col">
+              <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+            </div>
+            <div class="col">Hot Sauce</div>
+            <div class="col">
+              <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="customSwitch20" value="hotsauce">
+                <label class="custom-control-label" for="customSwitch20">$0.70</label>
+              </div>
+            </div>
+          </div>
+        </div><!-- /condiment -->
+
+        <!-- veggie -->
+        <div id="veggie" class="row flex-column mx-0 bg-white d-none">
+            <!-- veggie heading -->
+            <h3 class="bg-dark text-white px-3 py-2">Choose your Condiments</h3>
+            <div class="row mx-0">
+              <div class="col">ITEM</div>
+              <div class="col">DESCRIPTION</div>
+              <div class="col">PRICE</div>
+            </div>
+            <div class="row mx-0">
+              <div class="col">
+                <div class="border-bottom border-dark my-2"></div>
+              </div>
+            </div><!-- /veggie heading -->
+            <div class="row mx-0 mb-2">
+              <div class="col">
+                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+              </div>
+              <div class="col">Lettuce</div>
+              <div class="col">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch21" value="lettuce">
+                  <label class="custom-control-label" for="customSwitch21">$0.70</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mb-2">
+              <div class="col">
+                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+              </div>
+              <div class="col">Spinach</div>
+              <div class="col">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch22" value="spinach">
+                  <label class="custom-control-label" for="customSwitch22">$0.70</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mb-2">
+              <div class="col">
+                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+              </div>
+              <div class="col">Onions</div>
+              <div class="col">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch23" value="onions">
+                  <label class="custom-control-label" for="customSwitch23">$0.70</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mb-2">
+              <div class="col">
+                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+              </div>
+              <div class="col">Tomatoes</div>
+              <div class="col">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch24" value="tomatoes">
+                  <label class="custom-control-label" for="customSwitch24">$0.70</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mx-0 mb-2">
+              <div class="col">
+                <img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--54443_10.jpg?itok=-8d-wg6z" alt="..." class="img-thumbnail ingredient-img">
+              </div>
+              <div class="col">Cucumbers</div>
+              <div class="col">
+                <div class="custom-control custom-switch">
+                  <input type="checkbox" class="custom-control-input" id="customSwitch25" value="cucumbers">
+                  <label class="custom-control-label" for="customSwitch25">$0.70</label>
+                </div>
+              </div>
+            </div>
+          </div><!-- /veggie -->
+
+        <div class="row bg-dark mx-0">
+          <div class="col d-flex justify-content-between">
+            <button type="button" id="next-button" class="btn btn-dark">Next Section</button>
+            <button type="button" id="checkout-button" class="btn btn-dark">Checkout</button>
+          </div>
         </div>
   
       </div>
     
-      <div class="col-3 border border-primary">
-        <h1>Sandwhich</h1>
-        <div id="cart-container"></div>
+      <div class="col-3 border border p-0 bg-white">
+        <div class="row flex-column mx-0">
+          <h3 class="bg-dark text-white px-3 py-2">Sandwhich</h3>
+          <div class="row mx-0">
+              <div class="col">Order Summary</div>
+            </div>
+            <div class="row mx-0">
+              <div class="col">
+                <div class="border-bottom border-dark my-2"></div>
+              </div>
+            </div><!-- /veggie heading -->
+          <div id="cart-container"></div>
+        </div>
       </div>
     </div>
   </div>
