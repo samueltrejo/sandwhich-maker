@@ -1,11 +1,11 @@
 import print from '../helpers/util.js'
 
 const condiment = {
-  mayonaise: 0.70,
-  ketchup: 0.75,
-  mustard: 0.90,
-  ranch: 0.95,
-  hotsauce: 0.59
+  mayonaise: 0.15,
+  ketchup: 0.15,
+  mustard: 0.15,
+  ranch: 0.20,
+  hotsauce: 0.25
 };
 
 const addCondiment = (event) => {
