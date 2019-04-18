@@ -1,11 +1,11 @@
 import print from '../helpers/util.js'
 
 const veggie = {
-  lettuce: 0.70,
-  spinach: 0.75,
-  onions: 0.90,
-  tomatoes: 0.95,
-  cucumbers: 0.59
+  lettuce: 0.55,
+  spinach: 0.70,
+  onions: 0.65,
+  tomatoes: 0.80,
+  cucumbers: 0.73
 };
 
 const addVeggie = (event) => {

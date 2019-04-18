@@ -1,11 +1,11 @@
 import print from '../helpers/util.js'
 
 const cheese = {
-  american: 0.70,
-  swiss: 0.75,
-  cheddar: 0.90,
-  gorgonzola: 0.95,
-  parmesan: 0.59
+  american: 0.23,
+  swiss: 0.25,
+  cheddar: 0.21,
+  gorgonzola: 0.40,
+  parmesan: 0.45
 };
 
 const addCheese = (event) => {

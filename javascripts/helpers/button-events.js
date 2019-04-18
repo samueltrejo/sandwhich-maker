@@ -13,6 +13,7 @@ const condimentSection = document.getElementById('condiment');
 const veggieSection = document.getElementById('veggie');
 const checkoutButton = document.getElementById('checkout-button');
 const navCheckoutButton = document.getElementById('nav-checkout');
+const otherNavCheckout = document.getElementById('checkoutButton')
 const sectionButtons = document.getElementById('section-buttons');
 const nextSectionButton = document.getElementById('next-button');
 
@@ -24,6 +25,7 @@ const attachEvents = () => {
   veggieSection.addEventListener('click', veggie.addVeggie);
   checkoutButton.addEventListener('click', checkout.displayTotal);
   navCheckoutButton.addEventListener('click', checkout.displayTotal);
+  otherNavCheckout.addEventListener('click', checkout.displayTotal);
   sectionButtons.addEventListener('click', advance.changeSection);
   nextSectionButton.addEventListener('click', advance.incrementSection);
 };
