@@ -1,7 +1,7 @@
 # Sandwhich Maker
 Online sandwhich maker is a representation of an online checkout style cart. Passing information between modules to keep original prices secure from tampering.
 
-# Technologies Used
+## Technologies Used
 * html, css and javascript
 * modular javascript
 * import and export to pass information between modules
