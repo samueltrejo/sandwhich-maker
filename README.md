@@ -3,7 +3,7 @@ Online sandwhich maker is a representation of an online checkout style cart. Pas
 
 ![image of sandwhich maker cart site](https://raw.githubusercontent.com/samueltrejo/sandwhich-maker/master/img/readme.png)
 
-# Technologies Used
+## Technologies Used
 * html, css and javascript
 * modular javascript
 * import and export to pass information between modules
