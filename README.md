@@ -1,5 +1,7 @@
-# Sandwhich Maker
+# sandwhich-maker
 Online sandwhich maker is a representation of an online checkout style cart. Passing information between modules to keep original prices secure from tampering.
+
+![image of sandwhich maker cart site](https://raw.githubusercontent.com/samueltrejo/sandwhich-maker/master/img/readme.png)
 
 ## Technologies Used
 * html, css and javascript
@@ -7,7 +9,6 @@ Online sandwhich maker is a representation of an online checkout style cart. Pas
 * import and export to pass information between modules
 * more secure information approach
 
-![image of sandwhich maker cart site](https://raw.githubusercontent.com/samueltrejo/sandwhich-maker/master/img/readme.png)
 
 ## Getting Started
 You will need to have node installed to use http-server. Note if you already have node and http-server installed, skip to `How To Run`.
