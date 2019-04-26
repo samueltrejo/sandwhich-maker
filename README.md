@@ -1,4 +1,4 @@
-# sandwhich-maker
+# Sandwhich Maker
 Online sandwhich maker is a representation of an online checkout style cart. Passing information between modules to keep original prices secure from tampering.
 
 # Technologies Used
