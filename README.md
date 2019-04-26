@@ -1,4 +1,4 @@
-# SSandwhich Maker
+# Sandwhich Maker
 Online sandwhich maker is a representation of an online checkout style cart. Passing information between modules to keep original prices secure from tampering.
 
 ![image of sandwhich maker cart site](https://raw.githubusercontent.com/samueltrejo/sandwhich-maker/master/img/readme.png)
